@@ -1,0 +1,598 @@
+/*======================================================
+Author Name: Somnath Sikder
+Template Name: Business Website
+Tags: Html, Css, Bootstrap, jQuery, Javascript
+========================================================*/
+
+/*======================================================
+Table Of Content:
+1. Global Css
+2. Typhography
+3. Common Style
+4. Header Section
+5. Banner Section
+6. About Us
+7. Our Services 
+8. Clients 
+9. Portfolio 
+10. Testimonials
+11. Call To Action
+12. Our Team
+13. Contact Us
+14. Map
+15. Contact Us Form
+16. Footer
+========================================================*/
+
+/*================
+Global Css
+==================*/
+
+body{
+	padding: 0;
+	margin: 0;
+	color: #3a3a3a;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+	padding: 0;
+	margin: 0;
+	color: #000;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+	color: #3a3a3a;
+	font-size: 14px;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*================
+Typhography
+==================*/
+
+h1{
+	font-size: 50px;
+	line-height: 65px;
+}
+
+h2{
+	font-size: 40px; 
+	line-height: 50px;
+}
+
+h3{
+	font-size: 30px;
+	line-height: 40px;
+}
+
+h4{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+h5{
+	font-size: 18px;
+	line-height: 28px;
+}
+
+h6{
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/*================
+Common Style
+==================*/
+
+.section-padding{
+	padding: 70px 0;
+}
+
+.short-section-padding{
+	padding: 50px 0;
+}
+
+.section-bg{
+	background-color: #EEEEEE;
+}
+
+.section-title{
+	margin-bottom: 30px;
+}
+
+.section-title h2{
+	font-size: 32px;
+	line-height: 38px;
+	font-weight: 700;
+	color: #0c2e8a;
+}
+
+.section-title p{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #444444;
+}
+
+
+.read-more {
+	border: 1px solid red;
+	padding: 10px 40px;
+	border-radius: 30px;
+	background: red;
+	color: #fff;
+}
+
+span{
+	color: #50d8af;
+}
+
+/*=====================
+Header Section  
+=======================*/
+
+.header-area{
+	background: #fff;
+	padding: 10px 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 20%);
+}
+
+.header-logo a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-logo h2 {
+	color: #0C2E8A;
+	font-size: 42px;
+	font-weight: 700;
+}
+
+
+.menu-area {
+	text-align: right;
+}
+
+.menu-area ul li {
+	display: inline-block;
+	margin-right: 15px;
+	list-style: none;
+}
+
+.menu-area ul li a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #444;
+	font-weight: 600;
+	line-height: 50px;
+}
+
+
+/*============================
+Banner Section
+==============================*/
+
+.banner-area{
+	background-image: url(../images/5.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+
+section.banner-area::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+.banner-inner-content {
+	text-align: center;
+	position: relative;
+    z-index: 9;
+}
+
+
+.banner-inner-content h1 {
+	font-size: 64px;
+	color: #0c2e8a;
+	margin-bottom: 50px;
+	font-weight: 700px;
+}
+
+
+button.get-btn {background: #0c2e8a;
+	border: none;
+	padding: 10px 30px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 4px;
+	margin-right: 20px;
+}
+
+
+button.project-btn {
+	background: #50d8af;
+	border: none;
+	padding: 10px 30px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 4px;
+}
+
+
+/*=======================================
+About Us Section
+=========================================*/
+
+.about-inner-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0c2e8a;
+}
+
+.about-inner-content h3 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #555555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-inner-content ul li {
+    margin-bottom: 10px;
+}
+
+.about-inner-content ul li i {
+    float: left;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #50d8af;
+}
+
+.about-inner-content p {
+	font-size: 16px;
+	font-weight: 400;
+	color: #444444;
+}
+
+
+/*=======================================
+Service Section
+=========================================*/
+
+.single-box {
+	background: #fff;
+	padding: 40px;
+	box-shadow: 0px 0px 15px  rgba(0,0,0,0.1);
+}
+
+.icon {
+    float: left;
+}
+
+
+.icon i {
+    font-size: 50px;
+    color: #67DDB9;
+}
+
+.box-inner {
+    margin-left: 100px;
+}
+
+
+.box-inner h4 {
+    font-size: 22px;
+    line-height: 26px;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
+.box-inner p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #444444;
+}
+
+
+/*=======================================
+Clients Section
+=========================================*/
+
+
+
+
+/*=======================================
+Portfolio Section
+=========================================*/
+
+.portfolio-menu-area {
+    text-align: center;
+}
+
+.portfolio-menu-area ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.portfolio-menu-area ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #444444;
+    background: #f7f7f7;
+    padding: 8px 20px;
+    border-radius: 6px;
+}
+
+
+
+/*=======================================
+Testimonial Section
+=========================================*/
+
+.testimonial-single-box {
+    background: #fff;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin: 30px 20px;
+}
+
+.testimonial-inner img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonial-inner p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+.testimonial-inner h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #111111;
+    margin-top: 10px;
+}
+
+.testimonial-inner h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+}
+
+/*=======================================
+Call To Action Section
+=========================================*/
+
+section.call-to-area.section-padding {
+    background: #081E5B;
+}
+
+.call-inner h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.call-inner p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.call-to-btn {
+    text-align: right;
+    margin-top: 45px;
+}
+
+button.call-btn {
+    background: #081E5B;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/*=======================================
+Our Team Section
+=========================================*/
+
+.team-box {
+    text-align: center;
+}
+
+.team-inner-content {
+    background: #50D8AF;
+    padding: 15px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.team-inner-content h4 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.team-inner-content p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.team-social-icon a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 8px;
+}
+
+
+/*=======================================
+Contact Us Section
+=========================================*/
+
+.contact-icon-inner {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.contact-icon-inner i {
+    font-size: 48px;
+    color: #50d8af;
+    margin-bottom: 20px;
+}
+
+.contact-icon-inner h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #999999;
+}
+
+.contact-icon-inner p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 10px;
+}
+
+
+
+.phone-icon-inner {
+    text-align: center;
+    padding: 20px 0px;
+    border-left: 1px solid #50d8af;
+    border-right: 1px solid #50d8af;
+}
+
+.phone-icon-inner i {
+    font-size: 48px;
+    color: #50d8af;
+    margin-bottom: 20px;
+}
+
+.phone-icon-inner h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #999999;
+}
+
+.phone-icon-inner p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 10px;
+}
+
+
+.email-icon-inner {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.email-icon-inner i {
+    font-size: 48px;
+    color: #50d8af;
+    margin-bottom: 20px;
+}
+
+.email-icon-inner h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #999999;
+}
+
+.email-icon-inner p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 10px;
+}
+
+/*Contact form*/
+
+.single-field input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #212529;
+    padding: 0px 10px;
+}
+
+.single-field textarea {
+    width: 100%;
+    border: 1px solid #212529;
+}
+
+.single-field {
+	margin: 15px 0px;
+}
+
+button.send-btn {
+    border: none;
+    padding: 10px 20px;
+    background: #4AD5AB;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/*===================================
+Footer Section
+=====================================*/
+
+.footer-area{
+	background: #F2F5F8;
+	text-align: center;
+	padding: 25px 0px;
+}
+
+.footer-inner h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+}
+
+.footer-inner p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+}
